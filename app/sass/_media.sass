@@ -1,0 +1,222 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+@media only screen and (max-width : 1200px)
+	/**/
+	.wireframing__item-with-text
+		max-width: 100%
+		margin-left: 0
+		margin-right: 0
+		text-align: center
+	// .wireframing__item-arrow
+	// 	display: none
+	.wireframing__item
+		max-width: calc(50% - 25px)
+	.wireframing__item-with-text
+		max-width: 100%
+	.wireframing__item:nth-child(1n+1)
+		margin-right: 0px
+		margin-left: 25px
+		text-align: center
+	.wireframing__item:nth-child(2n+2)
+		margin-left: 0px
+		margin-right: 25px
+		text-align: center
+	.wireframing__item:nth-child(4n+2) .wireframing__item-arrow
+		transform: rotate(180deg)
+		margin-top: 0
+		left: 100%
+	.wireframing__item:nth-child(4n+4) .wireframing__item-arrow
+		// transform: rotate(180deg)
+		margin-top: 0
+		left: 100%
+	.wireframing__item:nth-child(4n+4) .wireframing__item-arrow:before
+		left: -70px
+	.wireframing__item-arrow:after, .wireframing__item-arrow:before
+		left: -70px
+	.wireframing__item-arrow:before
+		width: 80px !important
+	.wireframing__item-arrow
+		display: none
+	.wireframing__item
+		width: 100% !important
+		max-width: 100% !important
+		margin-left: 0px !important
+		margin-right: 0px !important
+		margin-top: 20px !important
+		margin-bottom: 20px !important
+	.wireframing__item:nth-child(1)
+		order: 0
+	.wireframing__item:nth-child(2)
+		order: 1
+	.wireframing__item:nth-child(3)
+		order: 5
+	.wireframing__item:nth-child(4)
+		order: 5
+	.wireframing__item:nth-child(5)
+		order: 3
+	.wireframing__item:nth-child(6)
+		order: 6
+	.wireframing__item:nth-child(7)
+		order: 7
+	.wireframing__item:nth-child(8)
+		order: 8
+	.info__wrap
+		text-align: center
+	.info__wrap-item-bottom
+		padding-top: 40px
+	.info
+		background: 0 0 !important
+		padding-top: 90px
+		padding-bottom: 65px
+	.info__wrap-controls 
+		margin: 50px auto
+	.info__spacer
+		display: none
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 1024px)
+	/**/
+	.work__item-image:after, .work__item-image:before
+		display: none
+	.info__wrap-item-top
+		text-align: center
+
+	.info__wrap-controls
+		padding-top: 35px
+	.info__control-title
+		width: 100%
+		padding-bottom: 10px
+		display: block
+	.info____wrap-control-range, .info__wrap-control-checkbox
+		display: block
+	.info____wrap-control-range
+		margin-bottom: 30px
+	.info__wrap-control-checkbox
+		margin-bottom: 24px
+
+	.info__wrap
+		padding: 0
+	.info
+		padding-top: 55px
+		padding-bottom: 55px
+	.hero__wrap
+		height: auto
+		padding-top: 105px
+		padding-bottom: 100px
+	.info__wrap-image
+		width: 100%
+	.ticket
+		padding-top: 55px
+		padding-bottom: 55px
+	.info__wrap-image
+		width: 100%
+	.info__wrap-item-bottom
+		text-align: center
+		padding-bottom: 25px
+	.info__wrap
+		flex-direction: column-reverse
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px)
+	/**/
+	.hero__main-title
+		font-size: 29px
+		line-height: 36px
+	.hero__main-subtitle
+		font-size: 18px
+		margin-top: 0px
+	
+	.hero__bottom-title
+		font-size: 16px
+		line-height: 25px
+	.hero__bottom-subtitle
+		font-size: 20px
+		line-height: 25px
+	.hero__wrap-image
+		width: 100%
+	.work__wrap-main-title
+		font-size: 29px
+	.work__wrap-description
+		font-size: 14px
+		line-height: 18px
+	.work__item-title
+		padding-top: 10px
+		font-size: 19px
+		min-height: auto
+		line-height: 24px
+	.work__item-text
+		font-size: 16px
+		line-height: 21px
+	.work__item
+		padding-bottom: 20px
+	.work
+		padding-top: 55px
+		padding-bottom: 55px
+	.header__back-image
+		width: 25px
+	.header__back-text
+		font-size: 14px
+	.header__back-logo-link
+		width: 75px
+	.header__back-logo-image
+		width: 100%
+	.hero__wrap-label
+		padding-bottom: 20px
+	.footer__back-text, .footer__next-text
+		display: none
+	.footer
+		padding-top: 25px
+		padding-bottom: 25px
+		padding-left: 0
+		padding-right: 0
+	.header
+		padding-left: 0
+		padding-right: 0
+	.wireframing__title
+		font-size: 29px
+		line-height: 35px
+	.wireframing__descr
+		font-size: 14px
+		line-height: 21px
+	.wireframing__item-arrow
+		display: none
+	.wireframing
+		padding-bottom: 40px
+	
+	.ticket
+		padding-top: 50px
+		padding-bottom: 50px
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
+	
+

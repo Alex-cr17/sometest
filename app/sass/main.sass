@@ -1,0 +1,364 @@
+/*
+	- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+	[Master StyleSheet]
+
+	Project:    Template Sigma
+	Version:    1.0.0
+	Last change:    -
+	Assigned to:    -
+	Primary use:    for Sigma
+	- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+	*/
+
+
+/*
+	- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+	[Layouts]
+	    + @import "fonts"
+	    + @import "libs"
+		+ @import "base"
+		+ @import "vars"
+	    + Header / .header
+	    + Hero / .hero
+		+ Work / .work
+		+ Wireframing / .wireframing
+		+ Info / .info
+		+ Footer / .footer
+	    + @import "media"
+	- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+	*/
+
+@import "fonts"
+@import "libs"
+@import "base"
+@import "vars"
+
+/*	
+	- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+		Header
+	- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+	*/
+.header
+	padding-top: 30px
+	padding-left: 30px
+	padding-right: 30px
+	position: absolute
+	width: 100%
+.header__wrap
+	display: flex
+	justify-content: space-between
+.header__back-text
+	color: #193a4a
+	font-size: 18px
+	font-family: Arial,sans-serif
+	text-transform: uppercase
+	font-weight: 700
+	line-height: 24px
+	padding-left: 12px
+	font-family: "OpenSansBold", sans-serif
+.header__back-link
+	display: flex
+	align-items: center
+.header__logo
+	display: flex
+	align-items: center
+
+/*	
+	- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+		Hero
+	- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+	*/
+.hero
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: center center
+.hero__wrap
+	height: 100vh
+	display: flex
+	flex-direction: column
+	justify-content: space-evenly
+	align-items: center
+	text-align: center
+.hero__main-title
+	font-size: 64px
+	line-height: 72px
+	color: #ff3d42
+	text-transform: uppercase
+.hero__main-subtitle
+	font-size: 36px
+	color: #102c3a
+	text-transform: uppercase
+	margin-top: -9px
+	letter-spacing: 0.075em
+	font-family: "OpenSansBold", sans-serif
+.hero__bottom-title
+	font-family: "OpenSansItalic", sans-serif
+	font-size: 24px
+	color: #102c3a
+	font-weight: normal
+	line-height: 38px
+	padding-bottom: 7px
+.hero__bottom-subtitle
+	color: #ef4d41
+	font-size: 30px
+	font-family: "OpenSansBold", sans-serif
+	text-transform: uppercase
+	line-height: 36px
+	letter-spacing: 0.075em
+/*	
+	- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+		Work
+	- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+	*/
+.work
+	padding-top: 70px
+	padding-bottom: 163px
+.work__wrap-content
+	text-align: center
+	padding-top: 55px
+.work__wrap-titles
+	text-align: center
+.work__wrap-main-title
+	font-family: 'OpenSansBold', sans-serif
+	color: #102c3a
+	font-size: 48px
+	letter-spacing: 0.075em
+	text-transform: uppercase
+	padding-bottom: 16px
+.work__wrap-description
+	color: #222222
+	font-size: 18px 
+	line-height: 24px
+	font-family: "OpenSansRegular", sans-serif
+.work__item-title
+	padding-top: 18px
+	color: #e54e48
+	letter-spacing: 0.075em
+	font-size: 24px
+	text-transform: uppercase
+	font-family: "OpenSansBold", sans-serif
+	min-height: 95px
+	line-height: 31px
+
+.work__item-text
+	color: #c0c0c0
+	font-size: 18px
+	font-family: "OpenSansItalic", sans-serif
+	line-height: 23px
+	padding-top: 10px
+.work__item-image
+	position: relative
+	height: 60px
+	display: flex
+	justify-content: center
+	align-items: center
+	&:before, &:after
+		content: ""
+		width: calc(50% + 30px)
+		height: 1px
+		background: #d3ccd3
+		position: absolute
+		margin: auto
+		top: 0
+		bottom: 0
+	&:before
+		left: -15px
+	&:after
+		right: -15px
+.work__item:first-child .work__item-image:before
+	display: none
+.work__item:last-child .work__item-image:after
+	display: none
+.work__item-image-space
+	display: flex
+	justify-content: center
+	align-items: center
+	padding: 0 53px
+	background: #fff
+	position: relative
+	z-index: 1
+/*	
+	- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+		Wireframing
+	- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+	*/
+.wireframing
+	padding-top: 52px
+	padding-bottom: 165px
+	background: #0176ea
+	background-image: linear-gradient(hsla(0,0%,100%,.2) 1px, transparent 0), linear-gradient(90deg, hsla(0,0%,100%,.2) 1px, transparent 0),  linear-gradient(hsla(0,0%,100%,.15) 1px, transparent 0),  linear-gradient(90deg, hsla(0,0%,100%,.15) 1px, transparent 0)
+	background-size: 55px 55px, 55px 55px, 11px 11px, 11px 11px
+.wireframing__wrap
+	display: flex
+	flex-wrap: wrap
+	// justify-content: flex-start
+	align-items: center
+.wireframing__item
+	position: relative
+	margin: 41px 90px
+	max-width: 250px
+	width: 100%
+
+.wireframing__item-arrow
+	display: block
+	position: absolute
+	top: 50%
+	margin-top: -3px
+	&:after
+		position: absolute
+		display: block
+		content: ""
+		width: 0
+		height: 0
+		border-style: solid
+		border-width: 4px 12px 3px 0
+		border-color: transparent #ffffff transparent transparent
+		top: 50%
+		margin-top: -2px
+	&:before
+		display: block
+		content: ""
+		width: 83px
+		height: 1px
+		position: absolute
+		background: #ffffff
+		top: 50%
+		margin-top: 1px
+		margin-left: 5px
+	&:before, &:after
+		left: -133px
+.wireframing__item:nth-child(6n+0) .wireframing__item-arrow,
+.wireframing__item:nth-child(6n+1) .wireframing__item-arrow,
+.wireframing__item:nth-child(6n+2) .wireframing__item-arrow
+	transform: rotate(180deg)
+	left: 250px
+.wireframing__item:nth-child(6n+3) .wireframing__item-arrow,
+.wireframing__item:nth-child(6n+2) .wireframing__item-arrow
+	transform: rotate(-90deg)
+	left: 50%
+	margin-top: -10px
+	&:before
+		width: 27px
+.wireframing__item:last-child .wireframing__item-arrow
+	display: none
+.wireframing__title
+	font-size: 48px
+	line-height: 60px
+	text-transform: uppercase
+	letter-spacing: 0.075em
+	color: #ffffff
+	padding-bottom: 22px
+.wireframing__descr
+	font-size: 18px
+	line-height: 24px
+	color: #ffffff
+	font-family: "OpenSansRegular"
+	font-weight: normal
+.wireframing__item-with-text
+	max-width: 680px
+	margin-left: 0px
+	&:before, &:after
+		display: none
+.wireframing__item:nth-child(3n+3)
+	margin-left: 0
+.wireframing__item:nth-child(3n+2)
+	margin-right: 0
+/*	
+	- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+		Info
+	- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+	*/
+.info
+	background-repeat: no-repeat
+	background-repeat: no-repeat
+	background-position: right center
+	padding-top: 138px
+	padding-bottom: 150px
+.info__spacer
+	min-height: 472px
+.info__wrap
+	padding: 65px 0
+.info__range
+	display: flex
+.info__wrap-item-bottom
+	display: flex
+	flex-direction: column
+	justify-content: center
+	height: 100%
+.info__wrap-control
+	display: flex
+	justify-content: flex-start
+	align-items: center
+.info__control-title
+	text-transform: uppercase
+	width: 95px
+	color: #0f2c46
+	font-size: 10px
+	font-family: "OpenSansSemiBold"
+.info__wrap-item-title
+	font-size: 24px
+	color: #ee290e
+	text-transform: uppercase
+	line-height: 30px
+	padding-bottom: 24px
+.info__wrap-item-text
+	color: #102c3a
+	font-size: 15px
+	line-height: 24px
+.info__wrap-item
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	height: 100%
+.info__wrap-controls
+	width: 100%
+	max-width: 512px
+.info____wrap-control-range
+	display: flex
+	align-items: center
+	margin-bottom: 11px
+.info__wrap-control-checkbox
+	display: flex
+	justify-content: flex-start
+	align-items: center
+	margin-bottom: 11px
+/*	
+	- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+		Footer
+	- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+	*/
+.footer
+	padding-top: 65px
+	padding-bottom: 76px
+	padding-left: 30px
+	padding-right: 30px
+	position: absolute
+	width: 100%
+.footer__wrap
+	display: flex
+	justify-content: space-between
+
+.footer__back-text, .footer__next-text
+	color: #193a4a
+	font-size: 18px
+	font-family: Arial,sans-serif
+	text-transform: uppercase
+	font-weight: 700
+	line-height: 24px
+	font-family: "OpenSansBold", sans-serif
+.footer__back-text
+	padding-left: 12px
+.footer__next-text
+	padding-right: 12px
+
+.footer__back, .footer__next
+	display: flex
+.footer__back-link,
+.footer__next-link
+	display: flex
+	align-items: center
+.footer__back-image_reverse
+	transform: rotate(180deg)
+@import "media" 
+
+
